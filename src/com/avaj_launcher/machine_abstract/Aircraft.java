@@ -1,6 +1,6 @@
-package com.avaj_launcher.machines;
+package com.avaj_launcher.machine_abstract;
 
-import com.avaj_launcher.weather.Coordinates;
+import com.avaj_launcher.simulator.Coordinates;
 
 public abstract class Aircraft {
 	protected long id;

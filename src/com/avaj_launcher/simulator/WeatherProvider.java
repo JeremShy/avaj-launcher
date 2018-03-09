@@ -1,14 +1,12 @@
-package com.avaj_launcher.weather;
+package com.avaj_launcher.simulator;
 
-import java.util.ArrayList;
-
-public class WeatherProvider {
+public final class WeatherProvider {
     private WeatherProvider()
     {
     }
 
     private static WeatherProvider weatherProvider = new WeatherProvider();
-    private static String weather[] = {"RAIN", "FOG", "SUN", "SNOW"};
+    private static final String weather[] = {"RAIN", "FOG", "SUN", "SNOW"};
 
     public static WeatherProvider getProvider()
     {
@@ -18,6 +16,7 @@ public class WeatherProvider {
     public String getCurrentWeather(Coordinates coordinates)
     {
         // TODO
-        return ("TODO");
+		int idx = (coordinates.getLongitude() + coordinates.getHeight() + coordinates.getLatitude()) % 4;
+        return (weather[idx]);
     }
 }
