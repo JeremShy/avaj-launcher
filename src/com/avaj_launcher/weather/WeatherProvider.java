@@ -1,7 +1,5 @@
 package com.avaj_launcher.weather;
 
-import com.avaj_launcher.maths.Coordinates;
-
 public class WeatherProvider {
     private WeatherProvider()
     {

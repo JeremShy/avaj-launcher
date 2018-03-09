@@ -1,6 +1,11 @@
 ./src/com/avaj_launcher/machines/Aircraft.java
+./src/com/avaj_launcher/machines/AircraftFactory.java
+./src/com/avaj_launcher/machines/Baloon.java
+./src/com/avaj_launcher/machines/Flyable.java
 ./src/com/avaj_launcher/machines/Helicopter.java
-./src/com/avaj_launcher/maths/Coordinates.java
+./src/com/avaj_launcher/machines/JetPlane.java
 ./src/com/avaj_launcher/simulator/Simulator.java
+./src/com/avaj_launcher/weather/Coordinates.java
+./src/com/avaj_launcher/weather/Tower.java
 ./src/com/avaj_launcher/weather/WeatherProvider.java
 ./src/com/avaj_launcher/weather/WeatherTower.java

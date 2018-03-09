@@ -1,11 +1,11 @@
-package com.avaj_launcher.maths;
+package com.avaj_launcher.weather;
 
 public final class Coordinates {
 	private final int longitude;
 	private final int latitude;
 	private final int height;
 
-	Coordinates(int arg_longitude, int arg_latitude, int arg_height)
+	public Coordinates(int arg_longitude, int arg_latitude, int arg_height)
 	{
 		this.longitude = arg_longitude;
 		this.latitude = arg_latitude;

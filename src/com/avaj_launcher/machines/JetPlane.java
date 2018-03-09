@@ -1,6 +1,6 @@
 package com.avaj_launcher.machines;
 
-import com.avaj_launcher.maths.Coordinates;
+import com.avaj_launcher.weather.Coordinates;
 import com.avaj_launcher.weather.WeatherTower;
 
 public final class JetPlane extends Aircraft implements  Flyable{
