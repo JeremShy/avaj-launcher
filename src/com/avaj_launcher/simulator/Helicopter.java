@@ -25,7 +25,14 @@ public final class Helicopter extends Aircraft implements Flyable
 		if (actualWeather == null || actualWeather != newWeather)
 		{
 			actualWeather = newWeather;
-			//TODO : Print funny message according to the new weather conditions.
+			if (actualWeather == "SUN")
+				this.log("Helicopter", "Wow, it's hot. My rotating motor is going to explode..........");
+			else if (actualWeather == "SNOW")
+				this.log("Helicopter", "Brrrrr.... It's freezing !");
+			else if (actualWeather == "RAIN")
+				this.log("Helicopter", "HELP IT'S RAINING BLBLBLBLBL");
+			else if (actualWeather == "FOG")
+				this.log("Helicopter", "I can't see anything two meters in front of me..");
 		}
 	}
 

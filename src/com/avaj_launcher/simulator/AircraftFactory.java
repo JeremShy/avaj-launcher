@@ -20,6 +20,7 @@ public class AircraftFactory {
 		else
 		{
 			//TODO : Throw an exception
+
 			return new Helicopter(name, coordinates);
 		}
 	}

@@ -1,0 +1,4 @@
+Baloon#B1(0): The experience is a bit ruined. You ever been in a hot air balloon under rain ?!
+JetPlane#J1(1): Is there something in front of me ? My radar isn't working ! Do i have something to honk ?! Oh yes this ! WOW IT WAS THE EJECTABLE SEAT WOOOOOOW
+Helicopter#H1(2): Wow, it's hot. My rotating motor is going to explode..........
+Baloon#B2(3): It's snowing, we're gonna crash !

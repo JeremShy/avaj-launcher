@@ -25,7 +25,14 @@ public final class Baloon extends Aircraft implements Flyable
 		if (actualWeather == null || actualWeather != newWeather)
 		{
 			actualWeather = newWeather;
-			//TODO : Print funny message according to the new weather conditions.
+			if (actualWeather == "SUN")
+				this.log("Baloon", "I have the sun in my eyes, it's not cool");
+			else if (actualWeather == "SNOW")
+				this.log("Baloon", "It's snowing, we're gonna crash !");
+			else if (actualWeather == "RAIN")
+				this.log("Baloon", "The experience is a bit ruined. You ever been in a hot air balloon under rain ?!");
+			else if (actualWeather == "FOG")
+				this.log("Baloon", "There is such a view up there... Too bad i can't see anything....");
 		}
 	}
 

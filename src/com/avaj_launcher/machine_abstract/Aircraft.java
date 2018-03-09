@@ -1,5 +1,6 @@
 package com.avaj_launcher.machine_abstract;
 
+import com.avaj_launcher.input_output.Logger;
 import com.avaj_launcher.simulator.Coordinates;
 
 public abstract class Aircraft {
@@ -20,5 +21,11 @@ public abstract class Aircraft {
 	{
 		Aircraft.idCounter++;
 		return Aircraft.idCounter - 1;
+	}
+
+	protected void log(String type, String message)
+	{
+		String toLog = type + '#' + this.name + '(' + this.id + "): " + message;
+		Logger.log(toLog);
 	}
 }

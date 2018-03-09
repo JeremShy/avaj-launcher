@@ -25,7 +25,14 @@ public final class JetPlane extends Aircraft implements Flyable
 		if (actualWeather == null || actualWeather != newWeather)
 		{
 			actualWeather = newWeather;
-			//TODO : Print funny message according to the new weather conditions.
+			if (actualWeather == "SUN")
+				this.log("JetPlane", "IT'S SUNNY AND I AM GOING FAAAAST WOOOOOOOOOOW !!!!!!!!!!");
+			else if (actualWeather == "SNOW")
+				this.log("JetPlane", "It's beautiful !!!!");
+			else if (actualWeather == "RAIN")
+				this.log("JetPlane", "Well i can't see anything because of the rain but i guess it's cool to fly in a JetPlane anyway !");
+			else if (actualWeather == "FOG")
+				this.log("JetPlane", "Is there something in front of me ? My radar isn't working ! Do i have something to honk ?! Oh yes this ! WOW IT WAS THE EJECTABLE SEAT WOOOOOOW");
 		}
 	}
 
