@@ -4,7 +4,7 @@ import com.avaj_launcher.machine_abstract.Flyable;
 
 import java.util.ArrayList;
 
-public class Simulator {
+public class Simulator { //TODO : Faire le main.
 	public static void main(String[] args) {
 		System.out.println("Coucou! pouet ");
 
