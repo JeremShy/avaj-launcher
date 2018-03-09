@@ -1,11 +1,13 @@
-package com.avaj_launcher;
+package com.avaj_launcher.machines;
+
+import com.avaj_launcher.maths.Coordinates;
 
 public abstract class Aircraft {
 	protected long id;
 	protected String name;
 	protected Coordinates coordinates;
 
-	static long idCounter = 0;
+	private static long idCounter = 0;
 
 	protected Aircraft(String arg_name, Coordinates arg_coordinates)
 	{

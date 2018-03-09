@@ -1,1 +1,1 @@
-java -cp bin com.avaj_launcher.Simulator
+java -cp bin com.avaj_launcher.simulator.Simulator

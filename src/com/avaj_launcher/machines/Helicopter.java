@@ -1,6 +1,9 @@
-package com.avaj_launcher;
+package com.avaj_launcher.machines;
 
-public final class Helicopter extends Aircraft {
+import com.avaj_launcher.maths.Coordinates;
+import com.avaj_launcher.weather.WeatherTower;
+
+public final class Helicopter extends Aircraft implements  Flyable{
 	Helicopter(String arg_name, Coordinates arg_coordinates)
 	{
 		super(arg_name, arg_coordinates);
