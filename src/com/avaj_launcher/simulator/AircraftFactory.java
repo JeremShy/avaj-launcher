@@ -1,9 +1,9 @@
 package com.avaj_launcher.simulator;
 
-import com.avaj_launcher.machine_abstract.Flyable;
+import com.avaj_launcher.interfaces.Flyable;
 
 public class AircraftFactory {
-	public Flyable newAircraft(String type, String name, int latitude, int longitude, int height) {
+	public Flyable newAircraft(String type, String name, int latitude, int longitude, int height) throws SimulatorException {
 		Coordinates coordinates = new Coordinates(latitude, longitude, height);
 		if (type == "Baloon")
 		{
@@ -19,9 +19,7 @@ public class AircraftFactory {
 		}
 		else
 		{
-			//TODO : Throw an exception
-
-			return new Helicopter(name, coordinates);
+			throw new SimulatorException("Syntax error : Unknown type [" + type + "]");
 		}
 	}
 }

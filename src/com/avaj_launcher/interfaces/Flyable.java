@@ -1,4 +1,4 @@
-package com.avaj_launcher.machine_abstract;
+package com.avaj_launcher.interfaces;
 
 import com.avaj_launcher.simulator.WeatherTower;
 

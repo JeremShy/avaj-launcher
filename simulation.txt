@@ -1,0 +1,18 @@
+Baloon#B1(0): I have the sun in my eyes, it's not cool
+JetPlane#J1(1): Is there something in front of me ? My radar isn't working ! Do i have something to honk ?! Oh yes this ! WOW IT WAS THE EJECTABLE SEAT WOOOOOOW
+Helicopter#H1(2): HELP IT'S RAINING BLBLBLBLBL
+Baloon#B2(3): It's snowing, we're gonna crash !
+Baloon#B1(0): The experience is a bit ruined. You ever been in a hot air balloon under rain ?!
+JetPlane#J1(1): IT'S SUNNY AND I AM GOING FAAAAST WOOOOOOOOOOW !!!!!!!!!!
+Helicopter#H1(2): I can't see anything two meters in front of me..
+Baloon#B2(3): The experience is a bit ruined. You ever been in a hot air balloon under rain ?!
+Baloon#B1(0): It's snowing, we're gonna crash !
+Helicopter#H1(2): Wow, it's hot. My rotating motor is going to explode..........
+Baloon#B2(3): It's snowing, we're gonna crash !
+Baloon#B1(0): The experience is a bit ruined. You ever been in a hot air balloon under rain ?!
+Baloon#B2(3): The experience is a bit ruined. You ever been in a hot air balloon under rain ?!
+Baloon#B1(0): It's snowing, we're gonna crash !
+Baloon#B1(0): landing. - Coordinates : (2, 0, 9) (lat, long, height).
+Baloon#B2(3): It's snowing, we're gonna crash !
+Baloon#B2(3): The experience is a bit ruined. You ever been in a hot air balloon under rain ?!
+Baloon#B2(3): landing. - Coordinates : (3, 0, 5) (lat, long, height).

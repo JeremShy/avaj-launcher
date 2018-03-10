@@ -1,6 +1,6 @@
 package com.avaj_launcher.simulator;
 
-import com.avaj_launcher.machine_abstract.Flyable;
+import com.avaj_launcher.interfaces.Flyable;
 import java.util.ArrayList;
 
 public abstract class Tower {
@@ -20,9 +20,9 @@ public abstract class Tower {
 	protected void conditionsChanged()
 	{
 		System.out.println("In  conditions changed");
-		for (Flyable observer: this.observers)
+		for(int i = 0; i < observers.size(); i++)
 		{
-			observer.updateConditions();
+			observers.get(i).updateConditions();
 		}
 	}
 }
