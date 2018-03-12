@@ -1,2 +1,2 @@
 #!/bin/sh
-java -cp bin com.avaj_launcher.simulator.Simulator
+java -cp src com.avaj_launcher.simulator.Simulator
