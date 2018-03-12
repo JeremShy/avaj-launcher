@@ -2,14 +2,13 @@ package com.avaj_launcher.simulator;
 
 import com.avaj_launcher.input_output.Logger;
 import com.avaj_launcher.interfaces.Flyable;
-import jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Simulator { //TODO : Faire le main.
+public class Simulator {
 	public static void main(String[] args) {
 
 		if (args.length <= 0)
@@ -32,8 +31,7 @@ public class Simulator { //TODO : Faire le main.
 		}
 
 		WeatherTower tower = new WeatherTower();
-		ArrayList<Flyable> flyables = new ArrayList<Flyable>();
-		AircraftFactory factory = new AircraftFactory();
+		ArrayList<Flyable> flyables = new ArrayList<>();
 
 		try
 		{
@@ -41,7 +39,7 @@ public class Simulator { //TODO : Faire le main.
 			BufferedReader br = new BufferedReader(freader);
 
 			String fline = br.readLine();
-			int nbr_simulations = 0;
+			int nbr_simulations;
 			try
 			{
 				nbr_simulations = Integer.parseInt(fline);
@@ -60,7 +58,7 @@ public class Simulator { //TODO : Faire le main.
 					throw new SimulatorException("Format error : Each line must have at least five fields.");
 				try
 				{
-					flyables.add(factory.newAircraft(array[0], array[1], Integer.parseInt(array[2]), Integer.parseInt(array[3]), Integer.parseInt(array[4])));
+					flyables.add(AircraftFactory.newAircraft(array[0], array[1], Integer.parseInt(array[2]), Integer.parseInt(array[3]), Integer.parseInt(array[4])));
 				}
 				catch (NumberFormatException e)
 				{

@@ -1,6 +1,6 @@
 package com.avaj_launcher.simulator;
 
-public final class Coordinates {
+public class Coordinates {
 	private final int longitude;
 	private final int latitude;
 	private final int height;

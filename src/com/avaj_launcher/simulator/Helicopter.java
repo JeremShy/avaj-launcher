@@ -5,7 +5,7 @@ import com.avaj_launcher.interfaces.Flyable;
 public final class Helicopter extends Aircraft implements Flyable
 {
 	protected String actualWeather = null;
-	protected WeatherTower weatherTower = null;
+	private WeatherTower weatherTower = null;
 
 	Helicopter(String arg_name, Coordinates arg_coordinates)
 	{

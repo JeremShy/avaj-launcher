@@ -3,7 +3,8 @@ package com.avaj_launcher.simulator;
 import com.avaj_launcher.interfaces.Flyable;
 
 public class AircraftFactory {
-	public Flyable newAircraft(String type, String name, int latitude, int longitude, int height) throws SimulatorException {
+	public static Flyable newAircraft(String type, String name, int latitude, int longitude, int height) throws SimulatorException
+	{
 		if (latitude < 0 || longitude < 0 || height < 0)
 			throw new SimulatorException("Error : Coordinates must be positive numbers.");
 		else if (height > 100)
