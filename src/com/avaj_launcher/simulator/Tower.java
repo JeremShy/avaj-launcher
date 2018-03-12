@@ -1,5 +1,6 @@
 package com.avaj_launcher.simulator;
 
+import com.avaj_launcher.input_output.Logger;
 import com.avaj_launcher.interfaces.Flyable;
 import java.util.ArrayList;
 
@@ -8,18 +9,18 @@ public abstract class Tower {
 
 	public void register(Flyable flyable)
 	{
-		System.out.println("New flyable added with name");
 		observers.add(flyable);
+		Logger.log("Tower says: " + flyable.getDescription() + " registered to weather tower.");
 	}
 
 	public  void unregister(Flyable flyable)
 	{
 		observers.remove(flyable);
+		Logger.log("Tower says: " + flyable.getDescription() + " unregistered from weather tower.");
 	}
 
 	protected void conditionsChanged()
 	{
-		System.out.println("In  conditions changed");
 		for(int i = 0; i < observers.size(); i++)
 		{
 			observers.get(i).updateConditions();

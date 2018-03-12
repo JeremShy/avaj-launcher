@@ -6,6 +6,7 @@ public abstract class Aircraft {
 	protected long id;
 	protected String name;
 	protected Coordinates coordinates;
+	protected String type;
 
 	private static long idCounter = 0;
 
@@ -22,10 +23,15 @@ public abstract class Aircraft {
 		return Aircraft.idCounter - 1;
 	}
 
-	protected void log(String type, String message)
+	protected void log(String message)
 	{
-		String toLog = type + '#' + this.name + '(' + this.id + "): " + message;
+		String toLog = getDescription() + ": " + message;
 		Logger.log(toLog);
+	}
+
+	public String getDescription()
+	{
+		return this.type + '#' + this.name + '(' + this.id + ")";
 	}
 
 	protected void move(Coordinates coords)
@@ -38,6 +44,7 @@ public abstract class Aircraft {
 			newHeight = 100;
 		else if (coords.getHeight() <= 0)
 		{
+			this.coordinates = new Coordinates(coords.getLongitude(), coords.getLatitude(), 0);
 			land();
 			return ;
 		}

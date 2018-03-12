@@ -15,7 +15,6 @@ public class Logger
 
 	public static void log(String message)
 	{
-		System.out.println("Attempting to write [" + message + "] in writer.");
 		try
 		{
 			Logger.writer.write(message + '\n');
